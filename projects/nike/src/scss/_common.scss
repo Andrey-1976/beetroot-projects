@@ -1,0 +1,28 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html, body {
+   height: 100vh;
+   font-size: 100%;
+}
+body {
+   background-color: $backgraund-color;
+   font-family: $main-font;
+   color: $text-color;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+img {
+   max-width: 100%;
+   height: auto;
+}
+section {
+   min-width: 800px;
+   min-height: 600px;
+   padding: 108px 51px 100px 62px;
+   background: url(../img/bg-1.png), url(../img/bg-2.png), url(../img/bg-3.png) center no-repeat;
+   background-size: auto;
+}

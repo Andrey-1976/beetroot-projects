@@ -1,0 +1,121 @@
+.section {
+  &__block {
+    padding: 25px 56px 20px 22px;
+    background-color: $main-color;
+    border-radius: 8px;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__columns {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 65px;
+    height: 33px;
+    margin-bottom: 69px;
+  }
+  &__photo {
+    padding-left: 15px;
+    margin: 0 80px 70px 0;
+  }
+  &__radio {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 180px;
+  }
+  &__input[type="radio"] {
+    display: none;
+  }
+  &__label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+  }
+  &__label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: 3px;
+    position: absolute;
+    background-color: #a1a1a1;
+  }
+  &__label--black::before {
+    background-color: $point-black;
+    border: 1px solid $text-color;
+  }
+  &__label--white::before {
+    background-color: $point-white;
+  }
+  &__label--red::before {
+    background-color: $point-red;
+  }
+  &__label--blue::before {
+    background-color: $point-blue;
+  }
+  &__title {
+    font-size: $big-size;
+    padding: 50px 0 16px;
+    span {
+      display: block;
+    }
+  }
+  &__subtitle {
+    font-size: $small-size;
+    margin-bottom: 24px;
+  }
+  &__star {
+    display: block;
+    margin-bottom: 26px;
+  }
+  &__select {
+    display: flex;
+    max-width: 141px;
+    margin-bottom: 28px;
+  }
+  &__select--wrapper {
+      width: 70px;
+      height: 33px;
+      margin-right: 1px;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-bottom: 1px solid $text-color;
+        border-right: 1px solid $text-color;
+        background-color: transparent;
+        transform: rotate(45deg);
+        pointer-events: none;
+        top: 7px;
+        left: 50px;
+        z-index: 1;
+      }
+  }
+  &__size,
+  &__qty {
+    display: block;
+    background-color: inherit;
+    color: inherit;
+    width: 100%; /* от ширины блока div */
+    height: 100%;
+    appearance: none;/* убираем дефолнтные стрелочки */
+    padding: 7px 25px 7px 15px;
+    cursor: pointer;
+  }
+  &__btn {
+    font-family: $main-font;
+    background-color: $button-color;
+    font-size: $small-size;
+    color: $point-white;
+    padding: 12px 60px 12px 55px;
+    border: 1px solid $point-white;
+    display: block;
+    cursor: pointer;
+  }
+}
