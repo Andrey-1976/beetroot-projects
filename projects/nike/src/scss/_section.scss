@@ -3,49 +3,61 @@
     padding: 25px 56px 20px 22px;
     background-color: $main-color;
     border-radius: 8px;
-  }
-  &__wrapper {
     display: flex;
+    justify-content: space-between;
+    min-width: 686px;
+    min-height: 391px;
   }
-  &__columns {
+  &__columns--left {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  &__columns--right {
+    padding: 54px 0 0 80px;
   }
   &__logo {
     width: 65px;
     height: 33px;
     margin-bottom: 69px;
+    align-self: start;
   }
   &__photo {
-    padding-left: 15px;
-    margin: 0 80px 70px 0;
+    margin: 0 0 70px 15px;
   }
   &__radio {
+    height: 10px;
+    width: 90px;
     display: flex;
     justify-content: space-between;
-    padding: 0 180px;
   }
-  &__input[type="radio"] {
-    display: none;
+  &__input {
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &__input:checked + &__label::before {
+    width: 12px;
+    height: 12px; 
+    border-color: $text-color;
   }
   &__label {
-    display: inline-block;
     cursor: pointer;
     position: relative;
   }
   &__label::before {
     content: "";
     display: inline-block;
+    border: 1px solid transparent;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    bottom: 3px;
+    bottom: -2px;
+    left: -18px;
     position: absolute;
-    background-color: #a1a1a1;
   }
   &__label--black::before {
     background-color: $point-black;
-    border: 1px solid $text-color;
   }
   &__label--white::before {
     background-color: $point-white;
@@ -58,7 +70,7 @@
   }
   &__title {
     font-size: $big-size;
-    padding: 50px 0 16px;
+    margin-bottom: 15px;
     span {
       display: block;
     }

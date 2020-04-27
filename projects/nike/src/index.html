@@ -12,39 +12,41 @@
 <body>
   <section>
     <div class="section__block">
-      <div class="section__wrapper">
-        <div class="section__columns section__columns--left">
-          <div class="section__logo">
-            <img src="./img/logo.png" alt="nike" />
-          </div>
-          <div class="section__photo">
-            <img src="./img/Nike-SB-Stefan-Janoski-Max@1X.png" alt="">
-          </div>
-          <div class="section__radio">
-
-            <input type="radio" class="section__input" id="radio"></input>
-            <label for="padio" class="section__label section__label--black" ></label>
-
-            <input type="radio" class="section__input" id="radio"></input>
-            <label for="padio" class="section__label section__label--white" ></label>
-
-            <input type="radio" class="section__input" id="radio"></input>
-            <label for="padio" class="section__label section__label--red" ></label>
-
-            <input type="radio" class="section__input" id="radio"></input>
-            <label for="padio" class="section__label section__label--blue" ></label>
-          </div>
+      <div class="section__columns section__columns--left">
+        <div class="section__logo">
+          <img src="./img/logo.png" alt="nike" />
         </div>
-        <div class="section__columns section__columns--right">
-          <p class="section__title">Nike SB Stefan <span>Janoski Max</spa></p>
-          <p class="section__subtitle">Unisex Skateboarding Shoe</p>
-          <div class="section__star">
-              <img src="./img/star.png" alt="star">
-              <img src="./img/star.png" alt="star">
-              <img src="./img/star.png" alt="star">
-              <img src="./img/star.png" alt="star">
-              <img src="./img/star.png" alt="star">
-          </div>
+        <div class="section__photo">
+          <img src="./img/Nike-SB-Stefan-Janoski-Max@1X.png" alt="">
+        </div>
+        <div class="section__radio">
+
+          <input type="radio" class="section__input" name="radio" id="radio-1" form="form1" value="black" checked></input>
+          <label for="padio-1" class="section__label section__label--black"></label>
+
+          <input type="radio" class="section__input" name="radio" id="radio-2" form="form1" value="white"></input>
+          <label for="padio-2" class="section__label section__label--white"></label>
+
+          <input type="radio" class="section__input" name="radio" id="radio-3" form="form1" value="red"></input>
+          <label for="padio-3" class="section__label section__label--red"></label>
+
+          <input type="radio" class="section__input" name="radio" id="radio-4" form="form1" value="blue"></input>
+          <label for="padio-4" class="section__label section__label--blue"></label>
+
+        </div>
+      </div>
+      <div class="section__columns section__columns--right">
+        <p class="section__title">Nike SB Stefan <span>Janoski Max</spa>
+        </p>
+        <p class="section__subtitle">Unisex Skateboarding Shoe</p>
+        <div class="section__star">
+          <img src="./img/star.png" alt="star">
+          <img src="./img/star.png" alt="star">
+          <img src="./img/star.png" alt="star">
+          <img src="./img/star.png" alt="star">
+          <img src="./img/star.png" alt="star">
+        </div>
+        <form action="#" class="section__form" id="form1">
           <div class="section__select">
             <div class="section__select--wrapper">
               <select class="section__size">
@@ -64,7 +66,7 @@
             </div>
           </div>
           <button type="submit" class="section__btn"> Add to cart</button>
-        </div>
+        </form>
       </div>
     </div>
   </section>
