@@ -1,23 +1,33 @@
 .navigation {
-   &__block {
-      margin: 0 auto;
-      min-width: 400px;
-      min-height: 535px;
-      background: url(../img/body.png) center no-repeat;
-      background-size: cover;
-      // position: absolute;
-      margin: auto;
-      // top: 0;
-      // left: 0;
-      // right: 0;
-      // bottom: 0;
-   }
-   &__nav {
-   }
-   &__list {
-   }
-   &__item {
-   }
-   &__link {
-   }
+    &__block {
+        max-width: 400px;
+        min-height: 496px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 52px 70px;
+        background: url(../img/foto.jpg) center no-repeat;
+        background-size: cover;
+        box-shadow: 0 11px 23px 5px rgba(72, 74, 78, 0.8);
+        letter-spacing: .05em;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+    &__item:first-child {
+        margin-right: 26px;
+    }
+    &__link {
+        border-bottom: 2px solid transparent;
+        color: #e1c2f1;
+        padding-bottom: 4px;
+        &:hover{
+            border-bottom: 2px solid $hover-color;
+        }
+    }
+    &__link--active {
+        border-bottom: 2px solid $hover-color;
+        color: $text-color;
+    }    
 }

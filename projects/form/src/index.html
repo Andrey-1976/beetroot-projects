@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Form</title>
-	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Form</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-	<div class="navigation__block">
-		<div class="navigation__nav">
-			<ul class="navigation__list">
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">Sign in</a>
-				</li>
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">Join us</a>
-				</li>
-			</ul>
-		</div>
-		
-
-	</div>
-
-	<script src="js/bundle.js"></script>
+    <div class="navigation__block">
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link navigation__link--active">Sign in</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Join us</a>
+                </li>
+            </ul>
+        </nav>
+        <form action="#" method="get" class="form">
+            <div class="form__wrapper">
+                <label class="form__label" for="username">Username</label>
+                <input class="form__input" type="text" id="username" 
+                required pattern="[A-Za-zА-Яа-яЁё]{3,12}" 
+                title="Username should only contain lowercase letters" />
+            </div>
+            <div class="form__wrapper">
+                <label class="form__label" for="password">Password</label>
+                <input class="form__input" type="text" id="password" 
+                required pattern="[0-9]{3,10}" size="10"
+                title="Password must contain at least 3 digits, maximum 10"/>
+            </div>
+            <div class="form__checkbox-wrapper">
+                <input class="form__input-checkbox" type="checkbox" id="checkbox" checked/>
+                <label class="form__label-checkbox" for="checkbox">Keep me signed in</label>
+            </div>
+            <button class="form__btn" type="submit">Sign in</button>
+        </form>
+        <div class="form__links-wrapper">
+            <a href="#" class="form__links">Forgot password</a>
+            <a href="#" class="form__links">Create an account</a>
+        </div>
+    </div>
+    <script src="js/bundle.js"></script>
 </body>
+
 </html>

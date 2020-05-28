@@ -3,14 +3,13 @@
    padding: 0;
    box-sizing: border-box;
 }
+
 html,
 body {
    font-size: 100%;
-   min-width: 100vh;
-   // display: flex;
-   // justify-content: center;
-   // align-items: center;
+   min-height: 100vh;
 }
+
 body {
    background-color: $backgraund-color;
    color: $text-color;
@@ -21,16 +20,19 @@ body {
    justify-content: center;
    align-items: center;
 }
+
 img {
    width: 100%;
    height: auto;
 }
+
 a {
    text-decoration: none;
    display: inline-block;
    color: inherit;
+   font-family: inherit;
 }
+
 ul {
    list-style: none;
 }
-
