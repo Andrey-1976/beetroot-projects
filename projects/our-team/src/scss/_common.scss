@@ -35,6 +35,36 @@ ul {
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    flex: 1 0 50%;
+    max-width: 1200px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border-left: 3px solid $subtitle-color;
+        border-bottom: 3px solid $subtitle-color;
+        left: 0px;
+        transform: rotate(45deg);  
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border-left: 3px solid $subtitle-color;
+        border-bottom: 3px solid $subtitle-color;
+        right: 0px;
+        transform: rotate(-135deg);  
+    }
 }
