@@ -1,0 +1,60 @@
+.promo {
+    padding: 21px 0 93px;
+    height: 650px;
+    background: url(../img/promo/firstscreen-bg.jpg) center (center/cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+    &__header {
+        font-size: 42px;
+        font-weight: 700;
+        color: $N0;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    &__subheader {
+        font-size: 24px;
+        font-weight: 500;
+        color: $N0;
+        text-transform: uppercase;
+        margin: 17px 0 0;
+    }
+    &__icons {
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 67px;
+    }
+    &__item {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        color: $N0;
+    }
+    &__img {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__text {
+        display: block;
+        margin-top: 20px;
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 500;
+        color: $N0;
+        margin-top: 18px;
+    }
+    &__link--uppercase {
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: $N0;
+        &:hover {
+            color: $N0;
+        }
+    }
+}
